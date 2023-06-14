@@ -1,0 +1,44 @@
+{
+  "extends": [
+    "stylelint-config-standard",
+    "stylelint-config-prettier",
+    "stylelint-config-recommended-scss",
+    "stylelint-config-standard-vue",
+    "stylelint-config-clean-order"
+  ],
+  "plugins": ["stylelint-order"],
+  "overrides": [
+    {
+      "files": ["** /*.(scss|css|vue|html)"],
+      "customSyntax": "postcss-scss"
+    },
+    {
+      "files": ["**/*.(html|vue)"],
+      "customSyntax": "postcss-html"
+    }
+  ],
+  "ignoreFiles": [
+    "** /*.js",
+    "**/*.jsx",
+    "** /*.tsx",
+    "**/*.ts",
+    "** /*.json",
+    "**/*.md",
+    "**/*.yaml"
+  ],
+  "rules": {
+    "no-descending-specificity": null,
+    "selector-pseudo-element-no-unknown": [
+      true,
+      {
+        "ignorePseudoElements": ["v-deep"]
+      }
+    ],
+    "selector-pseudo-class-no-unknown": [
+      true,
+      {
+        "ignorePseudoClasses": ["deep"]
+      }
+    ]
+  }
+}

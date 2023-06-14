@@ -1,0 +1,48 @@
+{
+  "name": "vue3-template",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc && vite build",
+    "preview": "vite preview",
+    "lint": "eslint . --ext .vue,.js,.ts,.jsx,.tsx --fix",
+    "format": "prettier --write \"./**/*.{html,vue,ts,js,json,md}\"",
+    "lint:style": "stylelint \"./**/*.{css,less,vue,html}\" --fix",
+    "prepare": "husky install",
+    "commitlint": "commitlint -e -V"
+  },
+  "dependencies": {
+    "vue": "^3.2.47"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.6.5",
+    "@commitlint/config-conventional": "^17.6.5",
+    "@typescript-eslint/eslint-plugin": "^5.59.11",
+    "@typescript-eslint/parser": "^5.59.11",
+    "@vitejs/plugin-vue": "^4.1.0",
+    "eslint": "^8.42.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-vue": "^9.14.1",
+    "husky": "^8.0.3",
+    "postcss": "^8.4.24",
+    "postcss-html": "^1.5.0",
+    "postcss-scss": "^4.0.6",
+    "prettier": "^2.8.8",
+    "sass": "^1.63.4",
+    "sass-loader": "^13.3.2",
+    "stylelint": "^15.7.0",
+    "stylelint-config-clean-order": "^5.0.1",
+    "stylelint-config-idiomatic-order": "^9.0.0",
+    "stylelint-config-prettier": "^9.0.5",
+    "stylelint-config-recommended-scss": "^12.0.0",
+    "stylelint-config-standard": "^33.0.0",
+    "stylelint-config-standard-vue": "^1.0.0",
+    "stylelint-order": "^6.0.3",
+    "stylelint-scss": "^5.0.1",
+    "typescript": "^5.0.2",
+    "vite": "^4.3.9",
+    "vue-tsc": "^1.4.2"
+  }
+}
